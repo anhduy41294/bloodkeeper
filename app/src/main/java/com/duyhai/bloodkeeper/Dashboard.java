@@ -60,8 +60,8 @@ public class Dashboard extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        loadingdatabase();
-        Load();
+        //loadingdatabase();
+        //Load();
         setContentView(R.layout.activity_dashboard);
         getFormWidget();
     }
