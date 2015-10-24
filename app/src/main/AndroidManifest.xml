@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.duyhai.bloodkeeper" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+
+        </activity>
+        <activity
+            android:name=".SubActivity"
+            android:label="@string/title_activity_sub" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".VayNoActivity"
+            android:label="@string/title_activity_vay_no" >
+        </activity>
+        <activity
+            android:name=".ThemGiaoDich"
+            android:label="@string/title_activity_them_giao_dich" >
+        </activity>
+        <activity
+            android:name=".GiaoDichTrongHuTien"
+            android:label="@string/title_activity_giao_dich_trong_hu_tien" >
+        </activity>
+        <activity
+            android:name=".KeHoachActivity"
+            android:label="@string/title_activity_ke_hoach" >
+        </activity>
+        <activity
+            android:name=".ThemVayNo"
+            android:label="@string/title_activity_them_vay_no" >
+        </activity>
+        <activity
+            android:name=".ThemSuKien"
+            android:label="@string/title_activity_them_su_kien" >
+        </activity>
+        <activity
+            android:name=".ThemTietKiem"
+            android:label="@string/title_activity_them_tiet_kiem" >
+        </activity>
+        <activity
+            android:name=".TimKiemNangCaoActivity"
+            android:label="@string/title_activity_tim_kiem_nang_cao" >
+        </activity>
+        <activity
+            android:name=".TheLoaiActivity"
+            android:label="@string/title_activity_the_loai" >
+        </activity>
+        <activity
+            android:name=".ThongKeActivity"
+            android:label="@string/title_activity_thong_ke" >
+        </activity>
+        <activity
+            android:name=".ChonSuKien"
+            android:label="@string/title_activity_chon_su_kien" >
+        </activity>
+        <activity
+            android:name=".ThemTongTien"
+            android:label="@string/title_activity_them_tong_tien" >
+        </activity>
+
+        <service android:name=".VayNoService" >
+        </service>
+        <service android:name=".TietKiemService" >
+        </service>
+
+        <activity
+            android:name=".Dashboard"
+            android:label="@string/title_activity_dashboard" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

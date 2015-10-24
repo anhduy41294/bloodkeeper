@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/giaodich_icon"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_hutien"
+            app:border_width="1dp"
+            app:border_color="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/giaodich_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/giaodich_icon"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/giaodich_tien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/giaodich_name"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorAccent"
+            />
+
+        <TextView
+            android:id="@+id/giaodich_infor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/giaodich_name"
+            android:layout_toRightOf="@+id/giaodich_icon" />
+        <TextView
+            android:id="@+id/theloaigiaodich"
+            android:text="Thể loại: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/giaodich_infor"
+            android:layout_toRightOf="@+id/giaodich_icon"
+            android:textColor="@color/colorMoneyCurrent"
+            />
+        <TextView
+            android:id="@+id/txttheloaigiaodich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/theloaigiaodich"
+            android:layout_alignBaseline="@+id/theloaigiaodich"
+            android:textColor="@color/colorMoneyCurrent" />
+
+    </RelativeLayout>
+</LinearLayout>

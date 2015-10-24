@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:id="@+id/theloai_thongke_color"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:paddingRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:id="@+id/theloai_thongke_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/theloai_thongke_color"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_bg_hutien"
+    android:clickable="true"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!--<ImageView
+            android:id="@+id/khtk_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="16dp" />-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/khtk_icon"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_hutien"
+            app:border_width="1dp"
+            app:border_color="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/khtk_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/khtk_icon"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/ngayketthuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/khtk_name"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorAccent"
+            />
+
+        <TextView
+            android:id="@+id/khtk_infor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/khtk_name"
+            android:layout_toRightOf="@+id/khtk_icon" />
+        <TextView
+            android:id="@+id/hienco"
+            android:text="Hiện có"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/khtk_infor"
+            android:layout_toRightOf="@+id/khtk_icon"
+            android:textColor="@color/colorMoneyCurrent"
+            />
+        <TextView
+            android:id="@+id/tienhienco_khtk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/hienco"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorMoneyCurrent" />
+        <TextView
+            android:id="@+id/muctieu"
+            android:text="Mục tiêu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hienco"
+            android:layout_toRightOf="@+id/khtk_icon"
+            android:textColor="@color/colorMoneyGoal"
+            />
+        <TextView
+            android:id="@+id/tienmuctieu_khtk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/muctieu"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorMoneyGoal"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

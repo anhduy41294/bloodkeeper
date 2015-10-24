@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BloodKeeper</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_timkiem">Tìm kiếm nâng cao</string>
+    <string name="title_activity_sub">SubActivity</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_vay_no">Vay Nợ</string>
+
+    <string-array name="TabsVayNo">
+        <item>CẦN TRẢ</item>
+        <item>CẦN THU</item>
+    </string-array>
+
+    <string name="title_activity_them_giao_dich">Thêm Giao Dịch</string>
+    <string name="title_activity_giao_dich_trong_hu_tien">Giao Dịch Trong Hũ Tiền</string>
+    <string name="title_activity_ke_hoach">Kế Hoạch</string>
+    <string name="title_activity_them_vay_no">Thêm Vay Nợ</string>
+    <string name="title_activity_them_su_kien">Thêm Sự Kiện</string>
+    <string name="title_activity_them_tiet_kiem">Thêm Tiết Kiệm</string>
+    <string name="title_activity_tim_kiem_nang_cao">TimKiemNangCaoActivity</string>
+    <string name="title_activity_the_loai">Thể loại Activity</string>
+    <string name="title_activity_thong_ke">Thống kê Activity</string>
+    <string name="title_activity_chon_su_kien">Chọn sự kiện</string>
+    <string name="title_activity_them_tong_tien">Thêm tiền</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+
+</resources>

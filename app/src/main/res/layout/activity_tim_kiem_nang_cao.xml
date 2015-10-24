@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DCDCDC">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"></include>
+    <TableLayout
+        android:id="@+id/tblformTimKiemNangCao"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:stretchColumns="2"
+        >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingTop="8dp"
+            >
+            <ImageView
+                android:id="@+id/imgTenVayNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_name"
+                />
+            <EditText
+                android:id="@+id/edtTenTimKiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint="Tên Giao dịch"/>
+        </TableRow>
+
+    </TableLayout>
+    <TableLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:stretchColumns="*"
+        >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingTop="8dp"
+
+            >
+            <EditText
+                android:id="@+id/edtTuNgay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint="Từ ngày"
+                android:inputType="date"/>
+            <EditText
+                android:id="@+id/edtDenNgay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint="Đến ngày"
+                android:inputType="date"/>
+        </TableRow>
+
+    </TableLayout>
+    <Button
+        android:id="@+id/btnTimKiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorAccent"
+        android:textColor="#FFFFFF"
+        android:text="Tìm Kiếm"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerListTKGiaoDich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
